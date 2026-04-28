@@ -20,12 +20,15 @@ nav {
 }
 
 
-.nav-logo h1 {
-    font-size: 26px;
-    font-family: 'Cormorant Garamond', serif;
-    color: white;
-    margin: 0;
-    letter-spacing: 1px;
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 45px; /* Ajuste para que no rompa el diseño */
+    width: auto;
+    object-fit: contain;
 }
 
 .nav-links {
@@ -40,12 +43,14 @@ nav {
 .nav-links li a {
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
-    /* Un poco más grandes */
-    font-weight: 400;
-    /* Más gruesos */
+    font-size: 0.95rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200; /* Thin/Light */
+    text-transform: uppercase;
+    letter-spacing: 2px;
     transition: all 0.3s ease;
 }
+
 
 
 

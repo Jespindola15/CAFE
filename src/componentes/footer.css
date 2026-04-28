@@ -15,17 +15,17 @@
     padding-bottom: 40px;
 }
 
-.footer-brand h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2rem;
-    margin-bottom: 5px;
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.footer-brand p {
-    color: #06fd69;
-    font-size: 0.9rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+.footer-logo-img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* Si el logo es negro, lo hacemos blanco para el footer oscuro */
 }
 
 .footer-links {
@@ -37,8 +37,12 @@
 .footer-links a {
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 0.9rem;
     transition: color 0.3s ease;
 }
+
 
 .footer-links a:hover {
     color: white;
@@ -54,11 +58,14 @@
 
 .footer-social p {
     color: rgba(255, 255, 255, 0.4);
-    font-size: 0.75rem;
+    font-size: 0.7rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 0;
 }
+
 
 .social-icons {
     display: flex;

@@ -7,7 +7,7 @@ export default function Navbar() {
     return (
         <nav>
             <div className="nav-logo">
-                <h1>Café</h1>
+                <a href="#"><img src="/logo.png" alt="Café Logo" className="logo-img" /></a>
             </div>
 
             <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>

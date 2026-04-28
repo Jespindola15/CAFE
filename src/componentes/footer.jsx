@@ -5,8 +5,7 @@ export default function Footer() {
         <footer className="footer">
             <div className="footer-content">
                 <div className="footer-brand">
-                    <h2>Café</h2>
-                    <p>De la Plaza Mitre</p>
+                    <img src="/logo.png" alt="Café Logo" className="footer-logo-img" />
                 </div>
                 
                 <div className="footer-links">
