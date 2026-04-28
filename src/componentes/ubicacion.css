@@ -21,30 +21,83 @@
 
 
 .ubicacion-container {
-    max-width: 1000px;
+    max-width: 1100px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 60px;
+    text-align: center;
+}
+
+.ubicacion-info {
+    max-width: 800px;
+}
+
+.ubicacion-iconica {
+    font-family: 'Poppins', sans-serif;
+    color: #06fd69;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 15px;
 }
 
 .ubicacion-container h2 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 200;
-    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 100;
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
     color: white;
-    position: relative;
-    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin: 0;
 }
 
-.ubicacion-container h2::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
+.ubicacion-desc {
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.1rem;
+    font-weight: 200;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.horarios-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px 50px;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.horarios-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 10px;
+}
+
+.horarios-dias {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.horarios-horas {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: #06fd69;
+    letter-spacing: 2px;
+}
+
     height: 2px;
     background: #0e3a10;
 }
