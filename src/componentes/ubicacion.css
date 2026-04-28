@@ -3,13 +3,21 @@
     background: linear-gradient(rgba(10, 15, 10, 0.85), rgba(10, 15, 10, 0.85)), url('/fondo-ubicacion.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Efecto parallax suave */
+    background-attachment: scroll; /* Fallback por defecto */
     min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
+
+/* Solo aplicar parallax en desktop donde funciona bien */
+@media (min-width: 1024px) {
+    .ubicacion-section {
+        background-attachment: fixed;
+    }
+}
+
 
 .ubicacion-container {
     max-width: 1000px;
