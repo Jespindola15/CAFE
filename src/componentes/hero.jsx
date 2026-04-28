@@ -12,7 +12,7 @@ export default function Hero() {
       </div>
         <h1>Café de la Plaza</h1>
         <h3>De la Plaza Mitre</h3>
-        <button className='hero-button'>Ver Menu</button>
+        <a href="#carta" className='hero-button'>Ver Menú</a>
       </div>
     </section>
     

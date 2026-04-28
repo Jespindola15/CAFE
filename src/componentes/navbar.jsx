@@ -7,7 +7,7 @@ export default function Navbar() {
     return (
         <nav>
             <div className="nav-logo">
-                <h1>Café Plaza</h1>
+                <h1>Café</h1>
             </div>
 
             <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
