@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  /* negro con toque verde */
+  color: white;
+}
+
+/* El main crece y empuja el footer hacia abajo */
+main {
+  flex: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(14, 58, 16, 0.3);
+  color: #f7f7f7;
+  font-size: 14px;
+}

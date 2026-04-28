@@ -1,0 +1,28 @@
+.ubicacion-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.ubicacion-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.ubicacion-container h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    text-align: center;
+}
