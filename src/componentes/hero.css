@@ -56,8 +56,8 @@
   width: clamp(200px, 40vw, 350px); /* Tamaño equilibrado: ni muy grande ni muy chico */
   height: auto;
   margin-bottom: 40px;
-  filter: brightness(0) invert(1); /* Lo hacemos blanco para que resalte sobre el video oscuro */
-  drop-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  filter: brightness(0) invert(1) drop-shadow(0 5px 15px rgba(0,0,0,0.5));
+
   animation: fadeInDown 1.2s ease-out;
 }
 
