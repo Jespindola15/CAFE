@@ -48,6 +48,10 @@
   gap: 20px;
 }
 
+.hero-content a {
+  text-decoration: none;
+}
+
 .hero-content h1 {
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(3rem, 10vw, 5.5rem);
