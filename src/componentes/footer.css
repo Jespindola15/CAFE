@@ -55,23 +55,23 @@
 
 /* Google Reviews Link */
 .google-reviews-link {
-    margin-top: 25px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding: 10px 15px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 10px;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
     width: fit-content;
+    white-space: nowrap;
 }
 
 .google-reviews-link i {
@@ -130,12 +130,13 @@
 /* Social */
 .social-icons {
     display: flex;
-    gap: 20px;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
 .social-icons a {
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     transition: all 0.3s ease;
     background: rgba(255, 255, 255, 0.05);
     width: 45px;
@@ -145,6 +146,7 @@
     justify-content: center;
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    text-decoration: none; /* Quita el subrayado */
 }
 
 .social-icons a:hover {
