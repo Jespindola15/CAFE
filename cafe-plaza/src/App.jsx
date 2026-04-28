@@ -3,6 +3,8 @@ import Navbar from './componentes/navbar'
 import Hero from './componentes/hero'
 import Carta from './componentes/carta'
 import Ubicacion from './componentes/Ubicacion'
+import Footer from "./componentes/footer"
+import Whatsapp from './componentes/Whatsapp'
 
 function App() {
   return (
@@ -17,12 +19,12 @@ function App() {
         <Hero />
         <Carta />
         <Ubicacion />
+        <Whatsapp />
       </main>
 
       
-      <footer>
-        <p>© 2025 Café de la Plaza · Todos los derechos reservados</p>
-      </footer>
+      <Footer /> 
+      
     </>
   )
 }

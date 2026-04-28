@@ -1,56 +1,113 @@
 nav {
     position: fixed;
-    top: 20px;
+    top: 25px;
+    /* Bajamos un poquito más el top */
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
-    background-color: rgba(14, 58, 16, 0.4);
-    backdrop-filter: blur(12px);
-    border-radius: 40px;
-    z-index: 100;
-    width: calc(100% - 40px);
-    gap: 40px;
+    padding: 18px 40px;
+    /* Más grueso y más espacio a los lados */
+    background-color: rgba(14, 58, 16, 0.45);
+    backdrop-filter: blur(15px);
+    border-radius: 50px;
+    z-index: 1000;
+    width: calc(100% - 60px);
+    /* Un poco más angosta para que se vea más como píldora */
     box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 
-div {
-    display: flex;
-    justify-content: left;
-}
-
-
-h1 {
-    font-size: 20px;
+.nav-logo h1 {
+    font-size: 26px;
     font-family: 'Cormorant Garamond', serif;
-    margin: 20px;
-    color: rgb(255, 255, 255);
-
+    color: white;
+    margin: 0;
+    letter-spacing: 1px;
 }
 
-nav ul {
+.nav-links {
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 40px;
+    /* Más espacio entre links */
 }
 
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
+.nav-links li a {
     color: white;
     text-decoration: none;
+    font-size: 1.1rem;
+    /* Un poco más grandes */
+    font-weight: 400;
+    /* Más gruesos */
+    transition: all 0.3s ease;
 }
 
-nav ul li a:hover {
+
+
+.nav-links li a:hover {
     color: #06fd69;
 }
 
-text {
-    text-decoration: none;
-    font-family: 'Cormorant Garamond', serif;
-    margin: 20px;
+/* Hamburguesa */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(10, 15, 10, 0.95);
+        backdrop-filter: blur(15px);
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+        border-radius: 40px;
+        gap: 25px;
+        transform: translateY(-20px);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /* Animación hamburguesa a X */
+    .bar.open:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .bar.open:nth-child(2) {
+        opacity: 0;
+    }
+
+    .bar.open:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
 }
