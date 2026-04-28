@@ -1,44 +1,31 @@
 .hero {
   position: relative;
-  height: 100vh;
+  height: 600px; /* Altura fija para probar */
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
-  color: white;
-  text-align: center;
+  background-color: red; /* Si ves rojo, es que el video no cargó, pero el contenedor sí */
 }
 
 .hero-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  transform: translate(-50%, -50%);
-  z-index: -2;
-  opacity: 1; /* Forzamos visibilidad */
-  display: block;
-}
-
-.hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.85);
-  z-index: -1;
+  object-fit: cover;
+  z-index: 10; /* Por encima del fondo rojo */
+  opacity: 1;
+}
+
+.hero-overlay {
+  display: none; /* Quitamos el overlay por ahora */
 }
 
 .hero-content {
-  z-index: 1;
-  max-width: 800px;
-  padding: 0 20px;
+  position: relative;
+  z-index: 20;
+  color: white;
+}
   margin-top: 60px;
   display: flex;
   flex-direction: column;
