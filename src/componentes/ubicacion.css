@@ -121,10 +121,34 @@
 
 @media (max-width: 768px) {
     .ubicacion-section {
-        padding: 60px 20px;
+        padding: 60px 15px;
+    }
+
+    .ubicacion-container {
+        gap: 40px;
+    }
+
+    .ubicacion-container h2 {
+        font-size: 2.5rem;
+        letter-spacing: 5px;
+    }
+
+    .ubicacion-desc {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .horarios-card {
+        padding: 20px 30px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .horarios-horas {
+        font-size: 1.2rem;
     }
 
     .map-wrapper iframe {
-        height: 350px;
+        height: 300px;
     }
-}
+}
