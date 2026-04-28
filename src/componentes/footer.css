@@ -1,117 +1,150 @@
 .footer {
-    background-color: #0a0f0a;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    padding: 60px 20px 20px;
+    background-color: #050805; /* Más oscuro que el resto */
     color: white;
-    font-family: 'Inter', sans-serif;
+    padding: 80px 20px 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
-    padding-bottom: 40px;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 60px;
 }
 
-.footer-brand {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.footer-section h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #06fd69;
+    margin-bottom: 25px;
 }
 
+/* Branding */
 .footer-logo-img {
-    height: 70px;
+    height: 60px;
     width: auto;
     object-fit: contain;
-    filter: brightness(0) invert(1); /* Si el logo es negro, lo hacemos blanco para el footer oscuro */
+    filter: brightness(0) invert(1);
+    margin-bottom: 20px;
 }
 
-.footer-links {
+.footer-tagline {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.6;
+    max-width: 250px;
+}
+
+/* Links */
+.footer-links-grid {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.footer-links a {
+.footer-links-grid a {
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
     font-size: 0.9rem;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-
-.footer-links a:hover {
+.footer-links-grid a:hover {
     color: white;
+    padding-left: 5px;
 }
 
-.footer-social {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra todo horizontalmente */
-    gap: 15px;
-    text-align: center;
-}
-
-.footer-social p {
-    color: rgba(255, 255, 255, 0.4);
-    font-size: 0.7rem;
+/* Info e Horarios */
+.footer-section.info p {
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin: 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 5px 0;
 }
 
+.footer-section.info .highlight {
+    color: white;
+    font-weight: 400;
+    margin-top: 2px;
+}
 
+.footer-address {
+    margin-top: 15px !important;
+    font-size: 0.8rem !important;
+    opacity: 0.5;
+}
+
+/* Social */
 .social-icons {
     display: flex;
-    gap: 25px;
-    justify-content: center; /* Asegura que los iconos estén juntos al centro */
+    gap: 20px;
 }
 
 .social-icons a {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 1.8rem; /* Un poco más grandes */
+    color: white;
+    font-size: 1.4rem;
     transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.05);
+    width: 45px;
+    height: 45px;
     display: flex;
     align-items: center;
-    text-decoration: none !important; /* QUITA LA LÍNEA DE ABAJO */
-}
-
-.social-icons a i {
-    text-decoration: none !important;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .social-icons a:hover {
-    color: #06fd69;
-    transform: translateY(-3px);
+    background: #06fd69;
+    color: black;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(6, 253, 105, 0.2);
+    border-color: #06fd69;
 }
 
-
-
+/* Bottom */
 .footer-bottom {
+    max-width: 1200px;
+    margin: 60px auto 0;
+    padding-top: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
-    padding-top: 20px;
     text-align: center;
 }
 
 .footer-bottom p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: 0.75rem;
     color: rgba(255, 255, 255, 0.3);
-    font-size: 0.8rem;
+    letter-spacing: 1px;
 }
 
-@media (max-width: 768px) {
+/* Responsive */
+@media (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 600px) {
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 50px;
     }
 
-    .footer-links {
-        align-items: center;
+    .footer-tagline {
+        margin: 0 auto;
     }
 
     .social-icons {
