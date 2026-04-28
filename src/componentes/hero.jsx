@@ -1,10 +1,11 @@
 import './hero.css'
+import videoSource from '../assets/hero-video.mp4'
 
 export default function Hero() {
   return (
     <section className="hero">
       <video autoPlay loop muted playsInline className="hero-video">
-        <source src="/hero-video.mp4" type="video/mp4" />
+        <source src={videoSource} type="video/mp4" />
       </video>
       <div className="hero-overlay"></div>
       
