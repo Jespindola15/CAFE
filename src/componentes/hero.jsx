@@ -10,7 +10,7 @@ export default function Hero() {
         <source src="/hero-video.mp4" type="video/mp4" />
         </video>
       </div>
-        <h1>Café de la Plaza</h1>
+        <h1>Café</h1>
         <h3>De la Plaza Mitre</h3>
         <a href="#carta" className='hero-button'>Ver Menú</a>
       </div>

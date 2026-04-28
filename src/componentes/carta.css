@@ -20,8 +20,11 @@
 }
 
 .carta-titulo {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 12px;
   color: white;
   margin-bottom: 60px;
   position: relative;
@@ -34,9 +37,9 @@
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;
-  height: 2px;
-  background: #0e3a10;
+  width: 80px;
+  height: 1px;
+  background: #06fd69;
 }
 
 .carta-grid {
@@ -89,27 +92,34 @@
 }
 
 .carta-card h3 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 4px;
   color: white;
   margin: 0;
 }
 
 .carta-card p {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  font-weight: 300;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
 .card-button {
-  background: #0e3a10;
+  background: rgba(255, 255, 255, 0.05);
   color: white;
   text-decoration: none;
-  padding: 12px 35px;
+  padding: 10px 30px;
   border-radius: 50px;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   transition: all 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }

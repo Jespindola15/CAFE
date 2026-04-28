@@ -53,43 +53,55 @@
 }
 
 .hero-content h1 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(3rem, 10vw, 5.5rem);
-  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(3.5rem, 12vw, 7.5rem);
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  margin-bottom: 5px;
   text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   color: white;
 }
 
 .hero-content p {
-  font-size: clamp(1.1rem, 3vw, 1.6rem);
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
   margin-bottom: 40px;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.9);
+  font-weight: 200;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .hero-button {
-  background: rgba(14, 58, 16, 0.85);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 15px 40px;
-  font-size: 1.2rem;
+  padding: 14px 45px;
+  font-size: 0.85rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
   border-radius: 50px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  font-family: 'Inter', sans-serif;
+  transition: all 0.4s ease;
+  font-family: 'Poppins', sans-serif;
 }
 
 .hero-button:hover {
-  background: #0e3a10;
+  background: rgba(255, 255, 255, 0.15);
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(14, 58, 16, 0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 h3 {
-  font-family: 'Cormorant Garamond', serif;
-  margin-top: -40px;
-  margin-bottom: 20px;
-  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: clamp(0.8rem, 2vw, 1.1rem);
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #06fd69;
 }
