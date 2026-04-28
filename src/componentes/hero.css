@@ -71,6 +71,7 @@
   letter-spacing: 4px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.8);
+  margin-bottom: -20px;
 }
 
 .hero-button {
