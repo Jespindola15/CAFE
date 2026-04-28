@@ -1,9 +1,12 @@
 .hero {
   position: relative;
-  height: 600px; /* Altura fija para probar */
+  height: 100vh;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-  background-color: red; /* Si ves rojo, es que el video no cargó, pero el contenedor sí */
+  background-color: #000;
 }
 
 .hero-video {
@@ -13,71 +16,40 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 10; /* Por encima del fondo rojo */
-  opacity: 1;
+  z-index: 0;
+  opacity: 0.5;
 }
 
 .hero-overlay {
-  display: none; /* Quitamos el overlay por ahora */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
 
 .hero-content {
   position: relative;
-  z-index: 20;
-  color: white;
-}
-  margin-top: 60px;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.hero-content a {
-  text-decoration: none;
+  gap: 30px;
 }
 
 .hero-logo {
-  width: clamp(200px, 40vw, 350px); /* Tamaño equilibrado: ni muy grande ni muy chico */
-  height: auto;
-  margin-bottom: 40px;
-  filter: brightness(0) invert(1) drop-shadow(0 5px 15px rgba(0,0,0,0.5));
-
-  animation: fadeInDown 1.2s ease-out;
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  width: clamp(200px, 40vw, 350px);
+  filter: brightness(0) invert(1);
 }
 
 .hero-button {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
+  padding: 15px 40px;
+  border: 1px solid white;
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 14px 45px;
-  font-size: 0.85rem;
-  font-weight: 300;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+  text-decoration: none;
   border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.4s ease;
-  font-family: 'Poppins', sans-serif;
-}
-
-.hero-button:hover {
-  background: rgba(255, 255, 255, 0.15);
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
