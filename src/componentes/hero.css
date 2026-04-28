@@ -30,6 +30,17 @@
   z-index: 1;
 }
 
+.seo-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 .hero-content {
   position: relative;
   z-index: 2;

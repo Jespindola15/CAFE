@@ -9,8 +9,14 @@
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr;
-    gap: 60px;
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-section h3 {
@@ -23,22 +29,60 @@
     margin-bottom: 25px;
 }
 
-/* Branding */
+/* Branding Alignment */
+.footer-section.brand {
+    align-items: flex-start;
+    text-align: left;
+}
+
 .footer-logo-img {
-    height: 60px;
+    height: 70px; /* Un poquito más grande */
     width: auto;
     object-fit: contain;
     filter: brightness(0) invert(1);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .footer-tagline {
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
-    font-size: 0.95rem;
-    color: rgba(255, 255, 255, 0.5);
-    line-height: 1.6;
-    max-width: 250px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.5;
+    max-width: 280px;
+    margin: 0;
+}
+
+/* Google Reviews Link */
+.google-reviews-link {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 0.85rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
+.google-reviews-link i {
+    color: #4285F4; /* Color Google Blue */
+    font-size: 1.1rem;
+}
+
+.google-reviews-link:hover {
+    background: rgba(66, 133, 244, 0.1);
+    border-color: #4285F4;
+    transform: translateX(5px);
 }
 
 /* Links */

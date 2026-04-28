@@ -15,7 +15,8 @@ export default function Hero() {
       </video>
       <div className="hero-overlay"></div>
       <div className="hero-content">
-        <img src="/logo.png" alt="Logo" className="hero-logo" />
+        <h1 className="seo-title">Café de la Plaza Mitre - San Nicolás</h1>
+        <img src="/logo.png" alt="Logo Café de la Plaza Mitre" className="hero-logo" />
         <a href="#carta" className="hero-button">Ver Menú</a>
       </div>
     </section>
