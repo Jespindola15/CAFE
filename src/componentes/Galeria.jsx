@@ -2,13 +2,15 @@ import './galeria.css'
 
 export default function Galeria() {
   const imagenes = [
-    { id: 1, src: 'https://scontent.cdninstagram.com/v/t51.29350-15/434685799_18428389703058863_4281728203585093796_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=18de2d&_nc_ohc=Wk_WfPz3_XQAX8A_WfP&_nc_ht=scontent.cdninstagram.com&oh=00_AfC_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z&oe=65EF_Z_f', alt: 'Nuestros Ñoquis Caseros', clase: 'large' },
-    { id: 2, src: 'https://scontent.cdninstagram.com/v/t51.29350-15/434521456_18428389703058863_4281728203585093796_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=18de2d&_nc_ohc=Wk_WfPz3_XQAX8A_WfP&_nc_ht=scontent.cdninstagram.com&oh=00_AfC_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z&oe=65EF_Z_f', alt: 'El Café Perfecto', clase: 'tall' },
-    { id: 3, src: 'https://scontent.cdninstagram.com/v/t51.29350-15/432145678_18428389703058863_4281728203585093796_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=18de2d&_nc_ohc=Wk_WfPz3_XQAX8A_WfP&_nc_ht=scontent.cdninstagram.com&oh=00_AfC_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z&oe=65EF_Z_f', alt: 'Vista a la Plaza', clase: 'wide' },
-    { id: 4, src: 'https://scontent.cdninstagram.com/v/t51.29350-15/431234567_18428389703058863_4281728203585093796_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=18de2d&_nc_ohc=Wk_WfPz3_XQAX8A_WfP&_nc_ht=scontent.cdninstagram.com&oh=00_AfC_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z&oe=65EF_Z_f', alt: 'Nuestra Pastelería', clase: 'small' },
-    { id: 5, src: 'https://scontent.cdninstagram.com/v/t51.29350-15/430123456_18428389703058863_4281728203585093796_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=18de2d&_nc_ohc=Wk_WfPz3_XQAX8A_WfP&_nc_ht=scontent.cdninstagram.com&oh=00_AfC_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z&oe=65EF_Z_f', alt: 'Momentos Especiales', clase: 'small' },
-    { id: 6, src: 'https://scontent.cdninstagram.com/v/t51.29350-15/429123456_18428389703058863_4281728203585093796_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=18de2d&_nc_ohc=Wk_WfPz3_XQAX8A_WfP&_nc_ht=scontent.cdninstagram.com&oh=00_AfC_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z&oe=65EF_Z_f', alt: 'Cenas Inolvidables', clase: 'medium' },
+    { id: 1, src: '/galeria1.jpg', alt: 'Café de la Plaza', clase: 'large' },
+    { id: 2, src: '/galeria2.jpg', alt: 'Nuestros Platos', clase: 'tall' },
+    { id: 3, src: '/galeria3.jpg', alt: 'Momentos Especiales', clase: 'wide' },
+    { id: 4, src: '/galeria4.jpg', alt: 'Gastronomía Local', clase: 'small' },
+    { id: 5, src: '/galeria5.jpg', alt: 'Detalles que Enamoran', clase: 'small' },
+    { id: 6, src: '/galeria6.jpg', alt: 'El Clásico de San Nicolás', clase: 'medium' },
   ];
+
+
 
 
   return (
