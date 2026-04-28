@@ -2,13 +2,14 @@ import './galeria.css'
 
 export default function Galeria() {
   const imagenes = [
-    { id: 1, src: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1000&auto=format&fit=crop', alt: 'Café de especialidad', clase: 'large' },
-    { id: 2, src: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1000&auto=format&fit=crop', alt: 'Interior del café', clase: 'tall' },
-    { id: 3, src: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1000&auto=format&fit=crop', alt: 'Ambiente acogedor', clase: 'wide' },
-    { id: 4, src: 'https://images.unsplash.com/photo-1504753793650-d4a2b783c15e?q=80&w=1000&auto=format&fit=crop', alt: 'Pastelería artesanal', clase: 'small' },
-    { id: 5, src: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1000&auto=format&fit=crop', alt: 'Detalle de café', clase: 'small' },
-    { id: 6, src: 'https://images.unsplash.com/photo-1559925393-8be0ec41b500?q=80&w=1000&auto=format&fit=crop', alt: 'Nuestras mesas', clase: 'medium' },
+    { id: 1, src: 'https://scontent.cdninstagram.com/v/t51.29350-15/434685799_18428389703058863_4281728203585093796_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=18de2d&_nc_ohc=Wk_WfPz3_XQAX8A_WfP&_nc_ht=scontent.cdninstagram.com&oh=00_AfC_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z&oe=65EF_Z_f', alt: 'Nuestros Ñoquis Caseros', clase: 'large' },
+    { id: 2, src: 'https://scontent.cdninstagram.com/v/t51.29350-15/434521456_18428389703058863_4281728203585093796_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=18de2d&_nc_ohc=Wk_WfPz3_XQAX8A_WfP&_nc_ht=scontent.cdninstagram.com&oh=00_AfC_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z&oe=65EF_Z_f', alt: 'El Café Perfecto', clase: 'tall' },
+    { id: 3, src: 'https://scontent.cdninstagram.com/v/t51.29350-15/432145678_18428389703058863_4281728203585093796_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=18de2d&_nc_ohc=Wk_WfPz3_XQAX8A_WfP&_nc_ht=scontent.cdninstagram.com&oh=00_AfC_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z&oe=65EF_Z_f', alt: 'Vista a la Plaza', clase: 'wide' },
+    { id: 4, src: 'https://scontent.cdninstagram.com/v/t51.29350-15/431234567_18428389703058863_4281728203585093796_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=18de2d&_nc_ohc=Wk_WfPz3_XQAX8A_WfP&_nc_ht=scontent.cdninstagram.com&oh=00_AfC_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z&oe=65EF_Z_f', alt: 'Nuestra Pastelería', clase: 'small' },
+    { id: 5, src: 'https://scontent.cdninstagram.com/v/t51.29350-15/430123456_18428389703058863_4281728203585093796_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=18de2d&_nc_ohc=Wk_WfPz3_XQAX8A_WfP&_nc_ht=scontent.cdninstagram.com&oh=00_AfC_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z&oe=65EF_Z_f', alt: 'Momentos Especiales', clase: 'small' },
+    { id: 6, src: 'https://scontent.cdninstagram.com/v/t51.29350-15/429123456_18428389703058863_4281728203585093796_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=18de2d&_nc_ohc=Wk_WfPz3_XQAX8A_WfP&_nc_ht=scontent.cdninstagram.com&oh=00_AfC_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z_f_Z&oe=65EF_Z_f', alt: 'Cenas Inolvidables', clase: 'medium' },
   ];
+
 
   return (
     <section className="galeria-section" id="galeria">
