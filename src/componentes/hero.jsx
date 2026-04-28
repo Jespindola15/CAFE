@@ -11,7 +11,7 @@ export default function Hero() {
         className="hero-video"
         preload="auto"
       >
-        <source src="/hero-video.mp4" type="video/mp4" />
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
       </video>
       <div className="hero-overlay"></div>
       
